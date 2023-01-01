@@ -31,7 +31,7 @@ menuC.addEventListener("click", (menuC) => {
 
 btnActiveFeature.addEventListener("click", (feature) => {
   dropFeature.style.display =
-    dropFeature.style.display === "none" ? "block" : "none";
+    dropFeature.style.display === "block" ? "none" : "block";
 
   if (dropFeature.style.display === "none") {
     document.getElementById("arrow-down-feature").src =
@@ -44,7 +44,7 @@ btnActiveFeature.addEventListener("click", (feature) => {
 
 btnActiveCompany.addEventListener("click", (company) => {
   dropCompany.style.display =
-    dropCompany.style.display === "none" ? "block" : "none";
+    dropCompany.style.display === "block" ? "none" : "block";
   if (dropCompany.style.display === "none") {
     document.getElementById("arrow-down-company").src =
       "./images/icon-arrow-down.svg";
