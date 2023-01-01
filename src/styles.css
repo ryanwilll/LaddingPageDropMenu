@@ -1,0 +1,72 @@
+:root {
+  --AlmostWhite: hsl(0, 0%, 98%);
+  --MediumGray: hsl(0, 0%, 41%);
+  --AlmostBlack: hsl(0, 0%, 8%);
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+.logotipo-main {
+  margin: 1.5em;
+}
+.dropsmenu {
+  display: none;
+}
+.account {
+  display: none;
+}
+.close-menu {
+  display: none;
+}
+.open-menu {
+  height: 1em;
+  margin: 1.5em;
+}
+
+main .title-main {
+  font-size: 2.2em;
+  margin: 1em 0;
+  text-align: center;
+}
+
+main .paragraph-main {
+  margin: 0 0.2em;
+  color: var(--MediumGray);
+  text-align: center;
+  font-size: 1.05em;
+}
+
+main .btn-main {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--AlmostBlack);
+  padding: 1em 1.5em;
+  border-radius: 0.8em;
+  color: var(--AlmostWhite);
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 1.5em 30%;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10em;    
+}
+
+footer img {
+  display: inline-block;
+  margin: 1em 0.5em 0.5em;
+  max-height: 30px;
+}
+
+footer .patrocinadores {
+  margin: 2em 0;
+}
