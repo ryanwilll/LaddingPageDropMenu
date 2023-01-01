@@ -2,17 +2,11 @@ const menuO = document.querySelector("#menu-o");
 const menuC = document.querySelector("#menu-c");
 const dropMenuMobile = document.querySelector("#dropsmenu-mobile");
 const blurBackground = document.querySelector(".max-width");
-const featureBtn = document.querySelector("#featurebtn");
+const btnActiveFeature = document.querySelector("#btn-active-feature");
 const dropFeature = document.querySelector("#drop-feature");
-const companyBtn = document.querySelector("#companybtn");
+const btnActiveCompany = document.querySelector("#btn-active-company");
 const dropCompany = document.querySelector("#drop-company");
-
-const featuredown = document.querySelector(
-  "#dropsmenu-mobile #featurebtn::after"
-);
-const companydown = document.querySelector(
-  "#dropsmenu-mobile #companybtn::after"
-);
+const arrowDownFeature = document.querySelector("#arrow-down-feature");
 
 /* 
 -
@@ -35,14 +29,29 @@ menuC.addEventListener("click", (menuC) => {
 
 /* Botões expandir menu - mobile*/
 
-featureBtn.addEventListener("click", (feature) => {
+btnActiveFeature.addEventListener("click", (feature) => {
   dropFeature.style.display =
     dropFeature.style.display === "none" ? "block" : "none";
+
+  if (dropFeature.style.display === "none") {
+    document.getElementById("arrow-down-feature").src =
+      "./images/icon-arrow-down.svg";
+  } else {
+    document.getElementById("arrow-down-feature").src =
+      "./images/icon-arrow-up.svg";
+  }
 });
 
-companyBtn.addEventListener("click", (company) => {
+btnActiveCompany.addEventListener("click", (company) => {
   dropCompany.style.display =
     dropCompany.style.display === "none" ? "block" : "none";
+  if (dropCompany.style.display === "none") {
+    document.getElementById("arrow-down-company").src =
+      "./images/icon-arrow-down.svg";
+  } else {
+    document.getElementById("arrow-down-company").src =
+      "./images/icon-arrow-up.svg";
+  }
 });
 
 /* Funções*/
@@ -55,5 +64,3 @@ function closeMenuMobile() {
   document.getElementById("dropsmenu-mobile").style.display = "none";
   document.getElementById("max-width").style.display = "none";
 }
-
-/* MENU MOBILE EXPANDIR/ENCOLHER*/

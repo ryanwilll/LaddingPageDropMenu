@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 
@@ -23,26 +25,26 @@
       <ul id="dropsmenu-mobile">
 
         <img id="menu-c" class="close-menu" src="./images/icon-close-menu.svg" alt="Fechar Menu Mobile">
-        <li id="featurebtn" class="dropbtn menu">Feature <img class="arrow-down" src="./images/icon-arrow-down.svg"
-            aria-hidden="true">
+        <li id="featurebtn" class="dropbtn menu"><span id="btn-active-feature">Feature</span><img
+            id="arrow-down-feature" class="arrow-down" src="./images/icon-arrow-down.svg" aria-hidden="true">
           <ul id="drop-feature" class="drop-menu">
-            <li class="drop-menu-content">Todo List</li>
-            <li class="drop-menu-content">Calendars</li>
-            <li class="drop-menu-content">Reminders</li>
-            <li class="drop-menu-content">Planning</li>
+            <li class="drop-menu-content"><a href="#">Todo List</a></li>
+            <li class="drop-menu-content"><a href="#">Calendars</a></li>
+            <li class="drop-menu-content"><a href="#">Reminders</a></li>
+            <li class="drop-menu-content"><a href="#">Planning</a></li>
           </ul>
-        <li id="companybtn" class="dropbtn menu">Company <img class="arrow-down" src="./images/icon-arrow-down.svg"
-            aria-hidden="true"></li>
+        <li id="companybtn" class="dropbtn menu"><span id="btn-active-company">Company</span><img class="arrow-down"
+            id="arrow-down-company" src="./images/icon-arrow-down.svg" aria-hidden="true"></li>
         <ul id="drop-company" class="drop-menu">
-          <li class="drop-menu-content">History</li>
-          <li class="drop-menu-content">Our Team</li>
-          <li class="drop-menu-content">Blog</li>
+          <li class="drop-menu-content"><a href="#">History</a></li>
+          <li class="drop-menu-content"><a href="#">Our Team</a></li>
+          <li class="drop-menu-content"><a href="#">Blog</a></li>
         </ul>
-        <li class="dropbtn">Careers</li>
-        <li class="dropbtn">About</li>
+        <li class="dropbtn"><a href="#">Careers</a></li>
+        <li class="dropbtn"><a href="#">About</a></li>
         <ul class="account">
-          <li class="account-btn">Login</li>
-          <li class="account-btn">Register</li>
+          <li class="account-btn"><a href="#">Login</a></li>
+          <li class="account-btn"><a href="#">Register</a></li>
         </ul>
       </ul>
 
