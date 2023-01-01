@@ -24,18 +24,20 @@ body {
   font-weight: 500;
   padding: 0;
   text-align: center;
+  margin-top: 2em;
 }
 
-.account li {
+.account .account-btn {
   display: inline-block;
-  width: 90%;
+  width: 80%;
   padding: 0.6em 0.2em;
-  border: 1px solid var(--MediumGray);
   border-radius: 1em;
   margin: 0 auto;
+  transition: border 0.6s linear;
 }
-.account li:nth-child(2) {
-  margin-bottom: 3em;
+
+.account .account-btn:nth-child(2) {
+  border: 1px solid var(--MediumGray);
 }
 
 .close-menu {
@@ -68,7 +70,7 @@ body {
   padding: 0;
   overflow: auto;
 }
-#dropsmenu-mobile li:first-of-type {
+#dropsmenu-mobile #featurebtn {
   margin-top: 4em;
 }
 
@@ -137,6 +139,23 @@ ul li {
 
 #drop-feature {
   display: none;
+}
+
+#drop-feature .drop-menu-content:nth-child(1)::before {
+  content: url(../images/icon-todo.svg);
+  margin-right: 1em;
+}
+#drop-feature .drop-menu-content:nth-child(2)::before {
+  content: url(../images/icon-calendar.svg);
+  margin-right: 1em;
+}
+#drop-feature .drop-menu-content:nth-child(3)::before {
+  content: url(../images/icon-reminders.svg);
+  margin-right: 1em;
+}
+#drop-feature .drop-menu-content:nth-child(4)::before {
+  content: url(../images/icon-planning.svg);
+  margin-right: 1em;
 }
 
 #drop-company {

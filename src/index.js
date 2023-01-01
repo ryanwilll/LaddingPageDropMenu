@@ -13,18 +13,22 @@ menuO.addEventListener("click", (menuO) => {
 
 menuC.addEventListener("click", (menuC) => {
   closeMenuMobile();
+  dropFeature.style.display =
+    dropCompany.style.display === "block" ? "" : "none";
+  dropCompany.style.display =
+    dropCompany.style.display === "block" ? "" : "none";
 });
 
 /* Botões expandir menu - mobile*/
 
 featureBtn.addEventListener("click", (feature) => {
-  console.log(feature);
-  expandirMenuFeature();
+  dropFeature.style.display =
+    dropFeature.style.display === "none" ? "block" : "none";
 });
 
 companyBtn.addEventListener("click", (company) => {
-  expandirMenuCompany();
-  console.log(company);
+  dropCompany.style.display =
+    dropCompany.style.display === "none" ? "block" : "none";
 });
 
 /* Funções*/
@@ -47,7 +51,10 @@ function expandirMenuCompany() {
   document.getElementById("drop-company").style.display = "block";
 }
 
+function recolherMenuFeature() {
+  document.getElementById("drop-feature").style.display = "none";
+}
 
-function recolherMenuFeature(){
-  document.getElementById
+function recolherMenuCompany() {
+  document.getElementById("drop-company").style.display = "none";
 }
