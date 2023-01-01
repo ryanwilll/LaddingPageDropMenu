@@ -1,7 +1,6 @@
 const menuO = document.querySelector("#menu-o");
 const menuC = document.querySelector("#menu-c");
 const dropMenuMobile = document.querySelector("#dropsmenu-mobile");
-const blurBackground = document.querySelector(".max-width");
 const btnActiveFeature = document.querySelector("#btn-active-feature");
 const dropFeature = document.querySelector("#drop-feature");
 const btnActiveCompany = document.querySelector("#btn-active-company");
@@ -17,22 +16,24 @@ EVENTOS
 */
 menuO.addEventListener("click", (menuO) => {
   openMenuMobile();
+  closeFeature();
+  closeCompany();
 });
 
 menuC.addEventListener("click", (menuC) => {
   closeMenuMobile();
-  dropFeature.style.display =
-    dropCompany.style.display === "block" ? "none" : "none";
-  dropCompany.style.display =
-    dropCompany.style.display === "block" ? "none" : "none";
+  closeCompany();
+  closeFeature();
 });
 
 /* Botões expandir menu - mobile*/
 
 btnActiveFeature.addEventListener("click", (feature) => {
-  dropFeature.style.display =
-    dropFeature.style.display === "block" ? "none" : "block";
-
+  if (dropFeature.style.display === "none") {
+    openFeature();
+  } else {
+    closeFeature();
+  }
   if (dropFeature.style.display === "none") {
     document.getElementById("arrow-down-feature").src =
       "./images/icon-arrow-down.svg";
@@ -43,8 +44,12 @@ btnActiveFeature.addEventListener("click", (feature) => {
 });
 
 btnActiveCompany.addEventListener("click", (company) => {
-  dropCompany.style.display =
-    dropCompany.style.display === "block" ? "none" : "block";
+  if (dropCompany.style.display === "none") {
+    openCompany();
+  } else {
+    closeCompany();
+  }
+
   if (dropCompany.style.display === "none") {
     document.getElementById("arrow-down-company").src =
       "./images/icon-arrow-down.svg";
@@ -63,4 +68,19 @@ function openMenuMobile() {
 function closeMenuMobile() {
   document.getElementById("dropsmenu-mobile").style.display = "none";
   document.getElementById("max-width").style.display = "none";
+}
+
+function openFeature() {
+  document.getElementById("drop-feature").style.display = "block";
+}
+
+function closeFeature() {
+  document.getElementById("drop-feature").style.display = "none";
+}
+
+function openCompany() {
+  document.getElementById("drop-company").style.display = "block";
+}
+function closeCompany() {
+  document.getElementById("drop-company").style.display = "none";
 }
