@@ -58,13 +58,14 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 10em;    
+  gap: 10em;
 }
 
 footer img {
   display: inline-block;
   margin: 1em 0.5em 0.5em;
-  max-height: 30px;
+  max-height: 1.25em;
+  max-width: 4.4em;
 }
 
 footer .patrocinadores {
