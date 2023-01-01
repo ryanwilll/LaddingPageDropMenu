@@ -7,6 +7,20 @@ const dropFeature = document.querySelector("#drop-feature");
 const companyBtn = document.querySelector("#companybtn");
 const dropCompany = document.querySelector("#drop-company");
 
+const featuredown = document.querySelector(
+  "#dropsmenu-mobile #featurebtn::after"
+);
+const companydown = document.querySelector(
+  "#dropsmenu-mobile #companybtn::after"
+);
+
+/* 
+-
+-
+EVENTOS
+-
+-
+*/
 menuO.addEventListener("click", (menuO) => {
   openMenuMobile();
 });
@@ -14,9 +28,9 @@ menuO.addEventListener("click", (menuO) => {
 menuC.addEventListener("click", (menuC) => {
   closeMenuMobile();
   dropFeature.style.display =
-    dropCompany.style.display === "block" ? "" : "none";
+    dropCompany.style.display === "block" ? "none" : "none";
   dropCompany.style.display =
-    dropCompany.style.display === "block" ? "" : "none";
+    dropCompany.style.display === "block" ? "none" : "none";
 });
 
 /* Botões expandir menu - mobile*/
@@ -43,18 +57,3 @@ function closeMenuMobile() {
 }
 
 /* MENU MOBILE EXPANDIR/ENCOLHER*/
-function expandirMenuFeature() {
-  document.getElementById("drop-feature").style.display = "block";
-}
-
-function expandirMenuCompany() {
-  document.getElementById("drop-company").style.display = "block";
-}
-
-function recolherMenuFeature() {
-  document.getElementById("drop-feature").style.display = "none";
-}
-
-function recolherMenuCompany() {
-  document.getElementById("drop-company").style.display = "none";
-}

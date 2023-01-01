@@ -74,14 +74,37 @@ body {
   margin-top: 4em;
 }
 
-#dropsmenu-mobile .menu::after {
+/* #dropsmenu-mobile #featurebtn::after {
   content: url(../images/icon-arrow-down.svg);
   padding: 0 0 0 0.5em;
 }
 
-#dropsmenu-mobile .dropbtn,
-#dropsmenu-mobile .drop-menu-content {
+#dropsmenu-mobile #companybtn::after {
+  content: url(../images/icon-arrow-down.svg);
+  padding: 0 0 0 0.5em;
+} */
+
+#featurebtn .arrow-down {
+  position: absolute;
+  display: inline-block;
+  margin: 0.5em 0em 0 0.5em;
+}
+
+#drop-feature {
+  margin: 0 0 0 -2em;
+}
+
+#companybtn .arrow-down {
+  position: absolute;
+  display: inline-block;
+  margin: 0.5em 0em 0 0.5em;
+}
+#dropsmenu-mobile .dropbtn {
   margin: 1em 0 0 2em;
+  font-weight: 600;
+}
+#dropsmenu-mobile .drop-menu-content {
+  margin: 1em 0 0 1em;
   font-weight: 600;
 }
 
