@@ -9,26 +9,85 @@ body {
 }
 
 .cabecalho {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
 .logotipo-main {
   margin: 1.5em;
 }
-.dropsmenu {
-  display: none;
-}
+
 .account {
-  display: none;
+  display: block;
+  box-sizing: border-box;
+  color: var(--MediumGray);
+  font-weight: 500;
+  padding: 0;
+  text-align: center;
 }
+
+.account li {
+  display: inline-block;
+  width: 90%;
+  padding: 0.6em 0.2em;
+  border: 1px solid var(--MediumGray);
+  border-radius: 1em;
+  margin: 0 auto;
+}
+.account li:nth-child(2) {
+  margin-bottom: 3em;
+}
+
 .close-menu {
-  display: none;
+  display: block;
+  position: absolute;
+  right: 0;
+  margin: 1em 2em;
 }
 .open-menu {
   height: 1em;
   margin: 1.5em;
 }
 
+.max-width {
+  display: none;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  width: 35%;
+  height: 100vh;
+  left: 0;
+}
+#dropsmenu-mobile {
+  display: none;
+  box-sizing: border-box;
+  position: fixed;
+  background-color: var(--AlmostWhite);
+  height: 100%;
+  width: 65%;
+  right: 0;
+  padding: 0;
+  overflow: auto;
+}
+#dropsmenu-mobile li:first-of-type {
+  margin-top: 4em;
+}
+
+#dropsmenu-mobile .menu::after {
+  content: url(../images/icon-arrow-down.svg);
+  padding: 0 0 0 0.5em;
+}
+
+#dropsmenu-mobile .dropbtn,
+#dropsmenu-mobile .drop-menu-content {
+  margin: 1em 0 0 2em;
+  font-weight: 600;
+}
+
+#dropsmenu-mobile li {
+  color: var(--MediumGray);
+  font-weight: 500;
+  margin: 1em 0 0 0em;
+}
 main .title-main {
   font-size: 2.2em;
   margin: 1em 0;
@@ -69,5 +128,17 @@ footer img {
 }
 
 footer .patrocinadores {
-  margin: 2em 0;
+  margin: 1.5em 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+#drop-feature {
+  display: none;
+}
+
+#drop-company {
+  display: none;
 }

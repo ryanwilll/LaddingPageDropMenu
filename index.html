@@ -14,22 +14,37 @@
 </head>
 
 <body>
+
   <header class="cabecalho">
     <img class="logotipo-main" src="./images/logo.svg" aria-hidden="true" alt="Logotipo">
-    <img class="open-menu" src="./images/icon-menu.svg" alt="Menu mobile">
-    <img class="close-menu" src="./images/icon-close-menu.svg" alt="Fechar Menu Mobile">
+    <img id="menu-o" class="open-menu" src="./images/icon-menu.svg" alt="Menu mobile">
 
-    <ul class="dropsmenu">
-      <li class="dropbtn">Features</li>
-      <li class="dropbtn">Company</li>
-      <li class="dropbtn">Careers</li>
-      <li class="dropbtn">About</li>
-    </ul>
-    <ul class="account">
-      <li class="account-btn">Login</li>
-      <li class="account-btn">Register</li>
-    </ul>
+    <div id="max-width" class="max-width">
+      <ul id="dropsmenu-mobile">
 
+        <img id="menu-c" class="close-menu" src="./images/icon-close-menu.svg" alt="Fechar Menu Mobile">
+        <li id="featurebtn" class="dropbtn menu">Feature</li>
+        <ul id="drop-feature" class="drop-menu">
+          <li class="drop-menu-content">Todo List</li>
+          <li class="drop-menu-content">Calendars</li>
+          <li class="drop-menu-content">Reminders</li>
+          <li class="drop-menu-content">Planning</li>
+        </ul>
+        <li id="companybtn" class="dropbtn menu">Company</li>
+        <ul id="drop-company" class="drop-menu">
+          <li class="drop-menu-content">History</li>
+          <li class="drop-menu-content">Our Team</li>
+          <li class="drop-menu-content">Blog</li>
+        </ul>
+        <li class="dropbtn">Careers</li>
+        <li class="dropbtn">About</li>
+        <ul class="account">
+          <li class="account-btn">Login</li>
+          <li class="account-btn">Register</li>
+        </ul>
+      </ul>
+
+    </div>
   </header>
 
   <main>
@@ -50,8 +65,7 @@
     </div>
   </footer>
 
-
-
 </body>
+<script src="./src/index.js"></script>
 
 </html>
