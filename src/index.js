@@ -1,3 +1,10 @@
+/* 
+-
+-
+DECLARAÇÕES
+-
+-
+*/
 const menuO = document.querySelector("#menu-o");
 const menuC = document.querySelector("#menu-c");
 const dropMenuMobile = document.querySelector("#dropsmenu-mobile");
@@ -5,7 +12,6 @@ const btnActiveFeature = document.querySelector("#btn-active-feature");
 const dropFeature = document.querySelector("#drop-feature");
 const btnActiveCompany = document.querySelector("#btn-active-company");
 const dropCompany = document.querySelector("#drop-company");
-const arrowDownFeature = document.querySelector("#arrow-down-feature");
 
 /* 
 -
@@ -25,8 +31,6 @@ menuC.addEventListener("click", (menuC) => {
   closeCompany();
   closeFeature();
 });
-
-/* Botões expandir menu - mobile*/
 
 btnActiveFeature.addEventListener("click", (feature) => {
   if (dropFeature.style.display === "none") {
@@ -59,7 +63,13 @@ btnActiveCompany.addEventListener("click", (company) => {
   }
 });
 
-/* Funções*/
+/* 
+-
+-
+FUNÇÕES
+-
+-
+*/
 function openMenuMobile() {
   document.getElementById("dropsmenu-mobile").style.display = "block";
   document.getElementById("max-width").style.display = "block";
