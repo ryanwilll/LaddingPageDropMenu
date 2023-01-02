@@ -239,8 +239,39 @@ ul li {
     word-wrap: break-word;
     text-align: left;
     line-height: 1em;
+    margin-bottom: 0.5em;
   }
   main span {
     display: inline-block;
+    margin-bottom: 0;
+  }
+  main .paragraph-main {
+    width: 80%;
+    text-align: left;
+    margin: 0 0;
+  }
+  main .btn-main {
+    display: block;
+    width: 30%;
+    margin: 3em 0 0;
+    padding: 0.9em;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    max-width: 78%;
+    margin: 0 auto;
+  }
+
+  footer img {
+    display: inline-block;
+    margin: 2em 0.5em 0.5em;
+    max-height: 100%;
+    max-width: 6em;
+  }
+
+  footer .patrocinadores {
+    margin: 1.5em 0;
   }
 }
