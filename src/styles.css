@@ -222,7 +222,7 @@ ul li {
     position: absolute;
     right: 0;
     top: 0;
-    margin: 5em 5em 0 0;
+    margin: 5em 6em 0 0;
   }
   #dropsmenu-mobile {
     display: none;
@@ -240,6 +240,7 @@ ul li {
     text-align: left;
     line-height: 1em;
     margin-bottom: 0.5em;
+    margin-top: 1.4em;
   }
   main span {
     display: inline-block;
@@ -273,5 +274,91 @@ ul li {
 
   footer .patrocinadores {
     margin: 1.5em 0;
+  }
+
+  .desktop {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 3em;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  ul a {
+    font-weight: normal;
+  }
+  .account-desktop {
+    display: flex;
+    width: 100%;
+    gap: 1em;
+    justify-content: right;
+    margin: 0 1em 0 0;
+  }
+  .account-desktop .account-btn-desktop:nth-child(1) {
+    padding: 0.4em 1em;
+  }
+  .account-desktop .account-btn-desktop:nth-child(2) {
+    box-sizing: border-box;
+    border: 1.9px solid var(--MediumGray);
+    padding: 0.4em 1em;
+    border-radius: 1em;
+  }
+  .desktop .dropbtn.menu {
+    color: var(--MediumGray);
+  }
+  .drop-menu-desktop-feature li {
+    margin-left: 1.6em;
+    margin-top: 0.4em;
+  }
+  .drop-menu-desktop-feature {
+    opacity: 0;
+    cursor: default;
+    position: absolute;
+    left: 6em;
+    top: 3.3em;
+    padding: 0;
+    border-radius: 0.3em;
+    height: 130px;
+    width: 160px;
+    background: var(--AlmostWhite);
+    -webkit-box-shadow: -2px 2px 29px 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: -2px 2px 29px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: -2px 2px 29px 5px rgba(0, 0, 0, 0.15);
+  }
+  .drop-menu-desktop-feature .drop-menu-content:nth-child(1):before {
+    content: url(../images/icon-todo.svg);
+    margin-right: 1em;
+  }
+  .drop-menu-desktop-feature .drop-menu-content:nth-child(2):before {
+    content: url(../images/icon-calendar.svg);
+    margin-right: 1em;
+  }
+  .drop-menu-desktop-feature .drop-menu-content:nth-child(3):before {
+    content: url(../images/icon-reminders.svg);
+    margin-right: 1em;
+  }
+  .drop-menu-desktop-feature .drop-menu-content:nth-child(4):before {
+    content: url(../images/icon-planning.svg);
+    margin-right: 1em;
+  }
+  .drop-menu-desktop-company {
+    opacity: 0;
+    position: absolute;
+    cursor: default;
+    top: 3.3em;
+    left: 18em;
+    padding: 0;
+    border-radius: 0.3em;
+    height: 110px;
+    width: 120px;
+    background: var(--AlmostWhite);
+    -webkit-box-shadow: -2px 2px 29px 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: -2px 2px 29px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: -2px 2px 29px 5px rgba(0, 0, 0, 0.15);
+  }
+  .drop-menu-desktop-company li {
+    margin-left: 1.6em;
+    margin-top: 0.4em;
   }
 }
