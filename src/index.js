@@ -28,6 +28,12 @@ EVENTOS
 -
 */
 featureDesktop.addEventListener("mouseenter", (eventofeaturedesktop) => {
+  if (companyDesktopContent.style.display === "block") {
+    companyDesktopContent.style.display = "none";
+    companyDesktop.style.color = "var(--MediumGray)";
+    document.getElementById("arrow-down-desk-company").src =
+      "./images/icon-arrow-down.svg";
+  }
   featureDesktopContent.style.display = "block";
   featureDesktop.style.color = "var(--AlmostBlack)";
   document.getElementById("arrow-down-desk").src = "./images/icon-arrow-up.svg";
@@ -43,6 +49,12 @@ featureDesktopContent.addEventListener("mouseleave", (eventofeaturedesktop) => {
 /*
  */
 companyDesktop.addEventListener("mouseenter", (eventofeaturedesktop) => {
+  if (featureDesktopContent.style.display === "block") {
+    featureDesktopContent.style.display = "none";
+    featureDesktop.style.color = "var(--MediumGray)";
+    document.getElementById("arrow-down-desk").src =
+      "./images/icon-arrow-down.svg";
+  }
   companyDesktopContent.style.display = "block";
   companyDesktop.style.color = "var(--AlmostBlack)";
 
