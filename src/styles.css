@@ -93,7 +93,8 @@ ul a {
 #featurebtn .arrow-down {
   position: absolute;
   display: inline-block;
-  margin: 0.5em 0em 0 0.5em;
+  margin: 0 0 0 0;
+  padding: 0.5em;
 }
 
 #drop-feature {
@@ -103,7 +104,8 @@ ul a {
 #companybtn .arrow-down {
   position: absolute;
   display: inline-block;
-  margin: 0.5em 0em 0 0.5em;
+  margin: 0 0 0 0;
+  padding: 0.5em;
 }
 #dropsmenu-mobile .dropbtn {
   margin: 1em 0 0 2em;
@@ -266,6 +268,7 @@ ul li {
   main .btn-main:hover {
     background-color: var(--AlmostWhite);
     color: var(--AlmostBlack);
+    transition: ease-in-out 0.5s;
   }
   footer {
     display: flex;
@@ -288,6 +291,8 @@ ul li {
 
   .desktop {
     width: 100%;
+    margin: 1.2em 0 0 0;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -323,35 +328,46 @@ ul li {
   }
   .drop-menu-desktop-feature li {
     margin-left: 1.6em;
-    margin-top: 0.4em;
+    margin-top: 0.6em;
   }
   .drop-menu-desktop-feature {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     cursor: default;
     position: absolute;
     left: 6em;
     top: 3.3em;
     padding: 0;
     border-radius: 0.3em;
-    height: 130px;
+    height: 140px;
     width: 160px;
     background: var(--AlmostWhite);
     -webkit-box-shadow: -2px 2px 29px 5px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: -2px 2px 29px 5px rgba(0, 0, 0, 0.15);
     box-shadow: -2px 2px 29px 5px rgba(0, 0, 0, 0.15);
+    transition: ease-in-out 0.3s;
   }
   .drop-menu-desktop-feature .drop-menu-content:nth-child(1):before {
     content: url(../images/icon-todo.svg);
     margin-right: 1em;
   }
   .drop-menu-desktop-feature .drop-menu-content a:hover,
+  .drop-menu-desktop-company .drop-menu-content a:hover {
+    color: var(--AlmostBlack);
+    transition: ease 0.1s;
+  }
   .dropbtn-desktop a:hover,
-  .drop-menu-desktop-company .drop-menu-content a:hover,
   .account-btn-desktop a:hover {
     color: var(--AlmostBlack);
+    transition: ease 0.5s;
+  }
+  .desktop .dropbtn.menu span:hover {
+    color: var(--AlmostBlack);
+    transition: ease 0.5s;
   }
   .account-btn-desktop:nth-child(2):hover {
     border: 1.9px solid var(--AlmostBlack);
+    transition: all ease 0.5s;
   }
   .drop-menu-desktop-feature .drop-menu-content:nth-child(2):before {
     content: url(../images/icon-calendar.svg);
@@ -366,7 +382,8 @@ ul li {
     margin-right: 1em;
   }
   .drop-menu-desktop-company {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     cursor: default;
     top: 3.3em;
@@ -379,9 +396,10 @@ ul li {
     -webkit-box-shadow: -2px 2px 29px 5px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: -2px 2px 29px 5px rgba(0, 0, 0, 0.15);
     box-shadow: -2px 2px 29px 5px rgba(0, 0, 0, 0.15);
+    transition: ease-in-out 0.3s;
   }
   .drop-menu-desktop-company li {
     margin-left: 1.6em;
-    margin-top: 0.4em;
+    margin-top: 0.6em;
   }
 }

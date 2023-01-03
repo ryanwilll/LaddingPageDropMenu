@@ -30,90 +30,90 @@ EVENTOS
 -
 -
 */
-featureDesktop.addEventListener("mouseenter", (eventofeaturedesktop) => {
-  if (companyDesktopContent.style.display === "block") {
-    companyDesktopContent.style.display = "none";
-    companyDesktop.style.color = "var(--MediumGray)";
-    document.getElementById("arrow-down-desk-company").src =
-      "./images/icon-arrow-down.svg";
-  }
-  featureDesktopContent.style.display = "block";
-  featureDesktop.style.color = "var(--AlmostBlack)";
-  document.getElementById("arrow-down-desk").src = "./images/icon-arrow-up.svg";
-});
+// featureDesktop.addEventListener("mouseenter", (eventofeaturedesktop) => {
+//   if (companyDesktopContent.style.display === "block") {
+//     companyDesktopContent.style.display = "none";
+//     companyDesktop.style.color = "var(--MediumGray)";
+//     document.getElementById("arrow-down-desk-company").src =
+//       "./images/icon-arrow-down.svg";
+//   }
+//   featureDesktopContent.style.display = "block";
+//   featureDesktop.style.color = "var(--AlmostBlack)";
+//   document.getElementById("arrow-down-desk").src = "./images/icon-arrow-up.svg";
+// });
 
-featureDesktopContent.addEventListener("mouseleave", (eventofeaturedesktop) => {
-  featureDesktopContent.style.display = "none";
-  featureDesktop.style.color = "var(--MediumGray)";
-  document.getElementById("arrow-down-desk").src =
-    "./images/icon-arrow-down.svg";
-});
+// featureDesktopContent.addEventListener("mouseleave", (eventofeaturedesktop) => {
+//   featureDesktopContent.style.display = "none";
+//   featureDesktop.style.color = "var(--MediumGray)";
+//   document.getElementById("arrow-down-desk").src =
+//     "./images/icon-arrow-down.svg";
+// });
 
-/*
- */
-companyDesktop.addEventListener("mouseenter", (eventofeaturedesktop) => {
-  if (featureDesktopContent.style.display === "block") {
-    featureDesktopContent.style.display = "none";
-    featureDesktop.style.color = "var(--MediumGray)";
-    document.getElementById("arrow-down-desk").src =
-      "./images/icon-arrow-down.svg";
-  }
-  companyDesktopContent.style.display = "block";
-  companyDesktop.style.color = "var(--AlmostBlack)";
+// /*
+//  */
+// companyDesktop.addEventListener("mouseenter", (eventofeaturedesktop) => {
+//   if (featureDesktopContent.style.display === "block") {
+//     featureDesktopContent.style.display = "none";
+//     featureDesktop.style.color = "var(--MediumGray)";
+//     document.getElementById("arrow-down-desk").src =
+//       "./images/icon-arrow-down.svg";
+//   }
+//   companyDesktopContent.style.display = "block";
+//   companyDesktop.style.color = "var(--AlmostBlack)";
 
-  document.getElementById("arrow-down-desk-company").src =
-    "./images/icon-arrow-up.svg";
-});
+//   document.getElementById("arrow-down-desk-company").src =
+//     "./images/icon-arrow-up.svg";
+// });
 
-companyDesktopContent.addEventListener("mouseleave", (eventofeaturedesktop) => {
-  companyDesktopContent.style.display = "none";
-  companyDesktop.style.color = "var(--MediumGray)";
-  document.getElementById("arrow-down-desk-company").src =
-    "./images/icon-arrow-down.svg";
-});
+// companyDesktopContent.addEventListener("mouseleave", (eventofeaturedesktop) => {
+//   companyDesktopContent.style.display = "none";
+//   companyDesktop.style.color = "var(--MediumGray)";
+//   document.getElementById("arrow-down-desk-company").src =
+//     "./images/icon-arrow-down.svg";
+// });
 
-menuO.addEventListener("click", (menuO) => {
-  openMenuMobile();
-  closeFeatureMobileMobile();
-  closeCompanyMobile();
-});
+// menuO.addEventListener("click", (menuO) => {
+//   openMenuMobile();
+//   closeFeatureMobileMobile();
+//   closeCompanyMobile();
+// });
 
-menuC.addEventListener("click", (menuC) => {
-  closeMenuMobile();
-  closeCompanyMobile();
-  closeCompanyMobile();
-});
+// menuC.addEventListener("click", (menuC) => {
+//   closeMenuMobile();
+//   closeCompanyMobile();
+//   closeCompanyMobile();
+// });
 
-btnActiveFeature.addEventListener("click", (feature) => {
-  if (dropFeature.style.display === "none") {
-    openFeature();
-  } else {
-    closeCompanyMobile();
-  }
-  if (dropFeature.style.display === "none") {
-    document.getElementById("arrow-down-feature").src =
-      "./images/icon-arrow-down.svg";
-  } else {
-    document.getElementById("arrow-down-feature").src =
-      "./images/icon-arrow-up.svg";
-  }
-});
+// btnActiveFeature.addEventListener("click", (feature) => {
+//   if (dropFeature.style.display === "none") {
+//     openFeature();
+//   } else {
+//     closeCompanyMobile();
+//   }
+//   if (dropFeature.style.display === "none") {
+//     document.getElementById("arrow-down-feature").src =
+//       "./images/icon-arrow-down.svg";
+//   } else {
+//     document.getElementById("arrow-down-feature").src =
+//       "./images/icon-arrow-up.svg";
+//   }
+// });
 
-btnActiveCompany.addEventListener("click", (company) => {
-  if (dropCompany.style.display === "none") {
-    openCompany();
-  } else {
-    closeCompanyMobile();
-  }
+// btnActiveCompany.addEventListener("click", (company) => {
+//   if (dropCompany.style.display === "none") {
+//     openCompany();
+//   } else {
+//     closeCompanyMobile();
+//   }
 
-  if (dropCompany.style.display === "none") {
-    document.getElementById("arrow-down-company").src =
-      "./images/icon-arrow-down.svg";
-  } else {
-    document.getElementById("arrow-down-company").src =
-      "./images/icon-arrow-up.svg";
-  }
-});
+//   if (dropCompany.style.display === "none") {
+//     document.getElementById("arrow-down-company").src =
+//       "./images/icon-arrow-down.svg";
+//   } else {
+//     document.getElementById("arrow-down-company").src =
+//       "./images/icon-arrow-up.svg";
+//   }
+// });
 
 /* 
 -
@@ -145,4 +145,41 @@ function openCompany() {
 }
 function closeCompanyMobile() {
   document.getElementById("drop-company").style.display = "none";
+}
+
+/* 
+
+FUNCTION DESK
+
+*/
+
+function openFeatureDesktop() {
+  featureDesktopContent.style.opacity = 1;
+  featureDesktopContent.style.visibility = "visible";
+  featureDesktop.style.color = "var(--AlmostBlack)";
+  document.getElementById("arrow-down-desk").src = "./images/icon-arrow-up.svg";
+}
+
+function closeFeatureDesktop() {
+  featureDesktopContent.style.opacity = 0;
+  featureDesktopContent.style.visibility = "hidden";
+  featureDesktop.style.color = "var(--MediumGray)";
+  document.getElementById("arrow-down-desk").src =
+    "./images/icon-arrow-down.svg";
+}
+
+function openCompanyDesktop() {
+  companyDesktopContent.style.opacity = 1;
+  companyDesktopContent.style.visibility = "visible";
+  companyDesktop.style.color = "var(--AlmostBlack)";
+  document.getElementById("arrow-down-desk-company").src =
+    "./images/icon-arrow-up.svg";
+}
+
+function closeCompanyDesktop() {
+  companyDesktopContent.style.opacity = 0;
+  companyDesktopContent.style.visibility = "hidden";
+  companyDesktop.style.color = "var(--MediumGray)";
+  document.getElementById("arrow-down-desk-company").src =
+    "./images/icon-arrow-down.svg";
 }
