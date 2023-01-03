@@ -231,7 +231,7 @@ ul li {
     display: none;
   }
   main {
-    max-width: 40%;
+    max-width: 50%;
     margin-left: 10em;
   }
   main .title-main {
@@ -240,7 +240,7 @@ ul li {
     text-align: left;
     line-height: 1em;
     margin-bottom: 0.5em;
-    margin-top: 1.2em;
+    margin-top: 1.5em;
   }
   main span {
     display: inline-block;
@@ -249,7 +249,7 @@ ul li {
   main .paragraph-main {
     width: 80%;
     text-align: left;
-    margin: 0 0;
+    margin: -1em 0 0 0;
   }
   main .btn-main {
     display: block;
@@ -267,7 +267,7 @@ ul li {
 
   footer img {
     display: inline-block;
-    margin: 2em 0.5em 0.5em;
+    margin: 1em 0.5em 0.5em;
     max-height: 100%;
     max-width: 6em;
   }
@@ -312,7 +312,7 @@ ul li {
     margin-top: 0.4em;
   }
   .drop-menu-desktop-feature {
-    opacity: 0;
+    opacity: 1;
     cursor: default;
     position: absolute;
     left: 6em;
