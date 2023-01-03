@@ -214,6 +214,9 @@ ul li {
 }
 
 @media screen and (min-width: 1200px) {
+  body {
+    overflow: hidden;
+  }
   .img-mobile {
     display: none;
   }
@@ -235,6 +238,7 @@ ul li {
   main {
     max-width: 50%;
     margin-left: 10em;
+    box-sizing: border-box;
   }
   main .title-main {
     font-size: 5em;
@@ -246,18 +250,23 @@ ul li {
   }
   main span {
     display: inline-block;
-    margin-bottom: 0;
   }
   main .paragraph-main {
-    width: 80%;
+    width: 70%;
     text-align: left;
     margin: -1em 0 0 0;
   }
   main .btn-main {
     display: block;
     width: 30%;
-    margin: 3em 0 0;
+    margin: 2.3em 0 0;
     padding: 0.9em;
+  }
+  main .btn-main:hover {
+    margin: 2.15em 0 1em;
+    background-color: var(--AlmostWhite);
+    color: var(--AlmostBlack);
+    border: 0.1px solid var(--AlmostBlack);
   }
   footer {
     display: flex;
@@ -293,6 +302,7 @@ ul li {
   .desktop li {
     cursor: pointer;
   }
+
   .account-desktop {
     display: flex;
     width: 100%;
@@ -335,6 +345,15 @@ ul li {
     content: url(../images/icon-todo.svg);
     margin-right: 1em;
   }
+  .drop-menu-desktop-feature .drop-menu-content a:hover,
+  .dropbtn-desktop a:hover,
+  .drop-menu-desktop-company .drop-menu-content a:hover,
+  .account-btn-desktop a:hover {
+    color: var(--AlmostBlack);
+  }
+  .account-btn-desktop:nth-child(2):hover {
+    border: 1.9px solid var(--AlmostBlack);
+  }
   .drop-menu-desktop-feature .drop-menu-content:nth-child(2):before {
     content: url(../images/icon-calendar.svg);
     margin-right: 1em;
@@ -353,7 +372,6 @@ ul li {
     cursor: default;
     top: 3.3em;
     left: 18em;
-
     padding: 0;
     border-radius: 0.3em;
     height: 110px;
