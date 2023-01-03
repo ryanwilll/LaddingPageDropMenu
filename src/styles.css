@@ -283,10 +283,13 @@ ul li {
     justify-content: left;
     gap: 3em;
     box-sizing: border-box;
-    cursor: pointer;
+    cursor: default;
   }
   ul a {
     font-weight: normal;
+  }
+  .desktop li {
+    cursor: pointer;
   }
   .account-desktop {
     display: flex;
@@ -312,7 +315,7 @@ ul li {
     margin-top: 0.4em;
   }
   .drop-menu-desktop-feature {
-    opacity: 0;
+    display: none;
     cursor: default;
     position: absolute;
     left: 6em;
@@ -343,7 +346,7 @@ ul li {
     margin-right: 1em;
   }
   .drop-menu-desktop-company {
-    opacity: 0;
+    display: none;
     position: absolute;
     cursor: default;
     top: 3.3em;

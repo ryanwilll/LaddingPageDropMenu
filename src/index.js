@@ -13,6 +13,12 @@ const dropFeature = document.querySelector("#drop-feature");
 const btnActiveCompany = document.querySelector("#btn-active-company");
 const dropCompany = document.querySelector("#drop-company");
 
+const featureDesktop = document.querySelector("#featurebtn");
+const featureDesktopContent = document.querySelector("#drop-feature-desktop");
+const arrowDownDesktop = document.querySelector("#arrow-down-desk");
+
+const companyDesktop = document.querySelector("#companybtn");
+const companyDesktopContent = document.querySelector("#drop-company-desktop");
 /* 
 -
 -
@@ -20,6 +26,31 @@ EVENTOS
 -
 -
 */
+featureDesktop.addEventListener("mouseenter", (eventofeaturedesktop) => {
+  featureDesktopContent.style.display = "block";
+  document.getElementById("arrow-down-desk").src = "./images/icon-arrow-up.svg";
+});
+
+featureDesktopContent.addEventListener("mouseleave", (eventofeaturedesktop) => {
+  featureDesktopContent.style.display = "none";
+  document.getElementById("arrow-down-desk").src =
+    "./images/icon-arrow-down.svg";
+});
+
+/*
+ */
+companyDesktop.addEventListener("mouseenter", (eventofeaturedesktop) => {
+  companyDesktopContent.style.display = "block";
+  document.getElementById("arrow-down-desk-company").src =
+    "./images/icon-arrow-up.svg";
+});
+
+companyDesktopContent.addEventListener("mouseleave", (eventofeaturedesktop) => {
+  companyDesktopContent.style.display = "none";
+  document.getElementById("arrow-down-desk-company").src =
+    "./images/icon-arrow-down.svg";
+});
+
 menuO.addEventListener("click", (menuO) => {
   openMenuMobile();
   closeFeature();
