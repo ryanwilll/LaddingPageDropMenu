@@ -223,7 +223,7 @@ ul li {
   .img-desktop {
     display: inline-block;
     width: 25em;
-    height: 32em;
+    height: 33em;
     position: absolute;
     right: 0;
     top: 0;
@@ -246,7 +246,7 @@ ul li {
     text-align: left;
     line-height: 1em;
     margin-bottom: 0.5em;
-    margin-top: 1.5em;
+    margin-top: 1.7em;
   }
   main span {
     display: inline-block;
