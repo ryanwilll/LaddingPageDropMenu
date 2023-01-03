@@ -252,7 +252,7 @@ ul li {
     display: inline-block;
   }
   main .paragraph-main {
-    width: 70%;
+    width: 25em;
     text-align: left;
     margin: -1em 0 0 0;
   }
