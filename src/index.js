@@ -28,11 +28,13 @@ EVENTOS
 */
 featureDesktop.addEventListener("mouseenter", (eventofeaturedesktop) => {
   featureDesktopContent.style.display = "block";
+  featureDesktop.style.color = "var(--AlmostBlack)";
   document.getElementById("arrow-down-desk").src = "./images/icon-arrow-up.svg";
 });
 
 featureDesktopContent.addEventListener("mouseleave", (eventofeaturedesktop) => {
   featureDesktopContent.style.display = "none";
+  featureDesktop.style.color = "var(--MediumGray)";
   document.getElementById("arrow-down-desk").src =
     "./images/icon-arrow-down.svg";
 });
@@ -41,12 +43,15 @@ featureDesktopContent.addEventListener("mouseleave", (eventofeaturedesktop) => {
  */
 companyDesktop.addEventListener("mouseenter", (eventofeaturedesktop) => {
   companyDesktopContent.style.display = "block";
+  companyDesktop.style.color = "var(--AlmostBlack)";
+
   document.getElementById("arrow-down-desk-company").src =
     "./images/icon-arrow-up.svg";
 });
 
 companyDesktopContent.addEventListener("mouseleave", (eventofeaturedesktop) => {
   companyDesktopContent.style.display = "none";
+  companyDesktop.style.color = "var(--MediumGray)";
   document.getElementById("arrow-down-desk-company").src =
     "./images/icon-arrow-down.svg";
 });
