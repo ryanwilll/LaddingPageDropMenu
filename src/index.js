@@ -7,6 +7,7 @@ DECLARAÇÕES
 -
 -
 */
+// Mobile
 const menuO = document.querySelector("#menu-o");
 const menuC = document.querySelector("#menu-c");
 const dropMenuMobile = document.querySelector("#dropsmenu-mobile");
@@ -15,10 +16,10 @@ const dropFeature = document.querySelector("#drop-feature");
 const btnActiveCompany = document.querySelector("#btn-active-company");
 const dropCompany = document.querySelector("#drop-company");
 
+// Desktop
 const featureDesktop = document.querySelector("#featurebtn");
 const featureDesktopContent = document.querySelector("#drop-feature-desktop");
 const arrowDownDesktop = document.querySelector("#arrow-down-desk");
-
 const companyDesktop = document.querySelector("#companybtn");
 const companyDesktopContent = document.querySelector("#drop-company-desktop");
 
@@ -73,21 +74,21 @@ companyDesktopContent.addEventListener("mouseleave", (eventofeaturedesktop) => {
 
 menuO.addEventListener("click", (menuO) => {
   openMenuMobile();
-  closeFeature();
-  closeCompany();
+  closeFeatureMobileMobile();
+  closeCompanyMobile();
 });
 
 menuC.addEventListener("click", (menuC) => {
   closeMenuMobile();
-  closeCompany();
-  closeFeature();
+  closeCompanyMobile();
+  closeCompanyMobile();
 });
 
 btnActiveFeature.addEventListener("click", (feature) => {
   if (dropFeature.style.display === "none") {
     openFeature();
   } else {
-    closeFeature();
+    closeCompanyMobile();
   }
   if (dropFeature.style.display === "none") {
     document.getElementById("arrow-down-feature").src =
@@ -102,7 +103,7 @@ btnActiveCompany.addEventListener("click", (company) => {
   if (dropCompany.style.display === "none") {
     openCompany();
   } else {
-    closeCompany();
+    closeCompanyMobile();
   }
 
   if (dropCompany.style.display === "none") {
@@ -135,13 +136,13 @@ function openFeature() {
   document.getElementById("drop-feature").style.display = "block";
 }
 
-function closeFeature() {
+function closeFeatureMobileMobile() {
   document.getElementById("drop-feature").style.display = "none";
 }
 
 function openCompany() {
   document.getElementById("drop-company").style.display = "block";
 }
-function closeCompany() {
+function closeCompanyMobile() {
   document.getElementById("drop-company").style.display = "none";
 }
