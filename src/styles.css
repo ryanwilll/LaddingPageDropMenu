@@ -241,12 +241,12 @@ ul li {
     box-sizing: border-box;
   }
   main .title-main {
-    font-size: 5em;
+    font-size: 4.5em;
     word-wrap: break-word;
     text-align: left;
     line-height: 1em;
     margin-bottom: 0.5em;
-    margin-top: 1.5em;
+    margin-top: 1.7em;
   }
   main span {
     display: inline-block;
@@ -261,12 +261,11 @@ ul li {
     width: 30%;
     margin: 2.3em 0 0;
     padding: 0.9em;
+    border: 1px solid var(--AlmostBlack);
   }
   main .btn-main:hover {
-    margin: 2.15em 0 1em;
     background-color: var(--AlmostWhite);
     color: var(--AlmostBlack);
-    border: 0.1px solid var(--AlmostBlack);
   }
   footer {
     display: flex;
