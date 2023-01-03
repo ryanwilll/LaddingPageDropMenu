@@ -19,6 +19,7 @@ const arrowDownDesktop = document.querySelector("#arrow-down-desk");
 
 const companyDesktop = document.querySelector("#companybtn");
 const companyDesktopContent = document.querySelector("#drop-company-desktop");
+
 /* 
 -
 -

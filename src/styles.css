@@ -20,7 +20,9 @@ body {
 .logotipo-main {
   margin: 1.5em;
 }
-
+.desktop {
+  display: none;
+}
 .account {
   display: block;
   box-sizing: border-box;
