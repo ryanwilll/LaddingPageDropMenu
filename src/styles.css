@@ -152,6 +152,13 @@ main .btn-main {
   box-sizing: border-box;
   width: 50%;
   margin: 2em auto 0;
+  border: 1px solid var(--AlmostBlack);
+}
+
+main .btn-main:hover {
+  background-color: var(--AlmostWhite);
+  color: var(--AlmostBlack);
+  transition: ease-in-out 0.5s;
 }
 footer {
   display: flex;
