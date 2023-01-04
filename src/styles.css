@@ -218,8 +218,8 @@ ul li {
   }
   .img-desktop {
     display: inline-block;
-    width: 30vw;
-    height: 80vh;
+    width: 30em;
+    height: 33em;
     position: absolute;
     right: 0;
     top: 0;
