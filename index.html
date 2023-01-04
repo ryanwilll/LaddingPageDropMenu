@@ -54,22 +54,25 @@
 
 
 
-    <img id="menu-o" class="open-menu" src="./images/icon-menu.svg" alt="Menu mobile">
+    <img id="menu-o" onclick="openMenuMobile()" class="open-menu" src="./images/icon-menu.svg" alt="Menu mobile">
 
     <div id="max-width" class="max-width">
       <ul id="dropsmenu-mobile">
 
-        <img id="menu-c" class="close-menu" src="./images/icon-close-menu.svg" alt="Fechar Menu Mobile">
-        <li id="featurebtn" class="dropbtn menu"><span id="btn-active-feature">Feature</span><img
-            id="arrow-down-feature" class="arrow-down" src="./images/icon-arrow-down.svg" aria-hidden="true">
+        <img id="menu-c" onclick="closeMenuMobile()" class="close-menu" src="./images/icon-close-menu.svg"
+          alt="Fechar Menu Mobile">
+        <li id="featurebtn" onclick="openOrCloseFeature()" class="dropbtn menu"><span
+            id="btn-active-feature">Feature</span><img id="arrow-down-feature" class="arrow-down"
+            src="./images/icon-arrow-down.svg" aria-hidden="true">
           <ul id="drop-feature" class="drop-menu">
             <li class="drop-menu-content"><a href="index.html">Todo List</a></li>
             <li class="drop-menu-content"><a href="index.html">Calendars</a></li>
             <li class="drop-menu-content"><a href="index.html">Reminders</a></li>
             <li class="drop-menu-content"><a href="index.html">Planning</a></li>
           </ul>
-        <li id="companybtn" class="dropbtn menu"><span id="btn-active-company">Company</span><img class="arrow-down"
-            id="arrow-down-company" src="./images/icon-arrow-down.svg" aria-hidden="true"></li>
+        <li id="companybtn" onclick="openOrCloseCompany()" class="dropbtn menu"><span
+            id="btn-active-company">Company</span><img class="arrow-down" id="arrow-down-company"
+            src="./images/icon-arrow-down.svg" aria-hidden="true"></li>
         <ul id="drop-company" class="drop-menu">
           <li class="drop-menu-content"><a href="index.html">History</a></li>
           <li class="drop-menu-content"><a href="index.html">Our Team</a></li>

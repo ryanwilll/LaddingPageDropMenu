@@ -58,7 +58,8 @@ body {
 }
 
 .max-width {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   position: fixed;
   background: rgba(0, 0, 0, 0.5);
   width: 35%;
@@ -67,7 +68,8 @@ body {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 #dropsmenu-mobile {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   box-sizing: border-box;
   position: fixed;
   background-color: var(--AlmostWhite);
@@ -357,7 +359,7 @@ ul li {
     transition: ease 0.1s;
   }
   .dropbtn-desktop a:hover,
-  .account-btn-desktop a:hover {
+  .account-desktop li a:hover {
     color: var(--AlmostBlack);
     transition: ease 0.5s;
   }
