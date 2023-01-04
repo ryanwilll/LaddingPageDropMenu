@@ -275,6 +275,7 @@ ul li {
     color: var(--AlmostBlack);
     transition: ease-in-out 0.5s;
   }
+
   footer {
     display: flex;
     flex-direction: row;
