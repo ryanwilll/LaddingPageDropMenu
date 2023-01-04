@@ -1,7 +1,7 @@
 # Frontend Mentor - Seção de introdução com navegação suspensa
 
 ![Intro section with dropdown navigation](./design/desktop-design.jpg)
-![Intro section with dropdown navigation](./design/active-states.jpg.jpg)
+![Intro section with dropdown navigation](./design/active-states.jpg)
 ![Intro section with dropdown navigation](./design/mobile-design.jpg)
 ![Intro section with dropdown navigation](./design/mobile-menu-expanded.jpg)
 
