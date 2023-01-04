@@ -1,4 +1,4 @@
-# Frontend Mentor - Intro section with dropdown navigation
+# Frontend Mentor - Seção de introdução com navegação suspensa
 
 ![Intro section with dropdown navigation](./design/desktop-design.jpg)
 ![Intro section with dropdown navigation](./design/active-states.jpg.jpg)
