@@ -15,7 +15,7 @@ Obrigado por verificar este desafio de codificação de front-end.
 
 ## O desafio
 
-O desafio é criar esse componente de cartão de visualização de 3 colunas e deixá-lo o mais próximo possível do design.
+O desafio é criar um ladding page com links e direcionamentos falsos, onde o usuário possa acessar todos os menus suspensosm, tanto na versão mobile quanto na desktop.
 
 Você pode usar qualquer ferramenta que desejar para ajudá-lo a concluir o desafio. Portanto, se você tem algo que gostaria de praticar, sinta-se à vontade para tentar.
 
