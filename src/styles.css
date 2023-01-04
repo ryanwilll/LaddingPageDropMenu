@@ -305,10 +305,10 @@ ul li {
   ul a {
     font-weight: normal;
   }
-  .desktop li {
+  .desktop #featurebtn,
+  .desktop #companybtn {
     cursor: pointer;
   }
-
   .account-desktop {
     display: flex;
     width: 100%;
