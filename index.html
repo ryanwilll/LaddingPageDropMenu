@@ -61,44 +61,43 @@
 
     <img id="menu-o" onclick="openMenuMobile()" class="open-menu" src="./images/icon-menu.svg" alt="Menu mobile">
 
-    <div id="max-width" class="max-width">
-      <ul id="dropsmenu-mobile">
-        <li><img id="menu-c" onclick="closeMenuMobile()" class="close-menu" src="./images/icon-close-menu.svg"
-            alt="Fechar Menu Mobile">
-        </li>
 
-        <li id="featurebtn-mobile" onclick="openOrCloseFeature()" class="dropbtn menu"><span
-            id="btn-active-feature">Feature</span><img id="arrow-down-feature" class="arrow-down"
-            src="./images/icon-arrow-down.svg" aria-hidden="true"
-            alt="Imagem ilustrativa seta para baixo para expandir o menu">
-          <ul id="drop-feature" class="drop-menu">
-            <li class="drop-menu-content"><a href="index.html">Todo List</a></li>
-            <li class="drop-menu-content"><a href="index.html">Calendars</a></li>
-            <li class="drop-menu-content"><a href="index.html">Reminders</a></li>
-            <li class="drop-menu-content"><a href="index.html">Planning</a></li>
-          </ul>
-        </li>
+    <ul id="dropsmenu-mobile">
+      <li><img id="menu-c" onclick="closeMenuMobile()" class="close-menu" src="./images/icon-close-menu.svg"
+          alt="Fechar Menu Mobile">
+      </li>
+      <div id="max-width" onclick="closeMenuMobile()" class="max-width"></div>
+      <li id="featurebtn-mobile" onclick="openOrCloseFeature()" class="dropbtn menu"><span
+          id="btn-active-feature">Feature</span><img id="arrow-down-feature" class="arrow-down"
+          src="./images/icon-arrow-down.svg" aria-hidden="true"
+          alt="Imagem ilustrativa seta para baixo para expandir o menu">
+        <ul id="drop-feature" class="drop-menu">
+          <li class="drop-menu-content"><a href="index.html">Todo List</a></li>
+          <li class="drop-menu-content"><a href="index.html">Calendars</a></li>
+          <li class="drop-menu-content"><a href="index.html">Reminders</a></li>
+          <li class="drop-menu-content"><a href="index.html">Planning</a></li>
+        </ul>
+      </li>
 
-        <li id="companybtn-mobile" onclick="openOrCloseCompany()" class="dropbtn menu"><span
-            id="btn-active-company">Company</span><img class="arrow-down" id="arrow-down-company"
-            src="./images/icon-arrow-down.svg" aria-hidden="true"
-            alt="Imagem ilustrativa seta para baixo para expandir o menu">
-          <ul id="drop-company" class="drop-menu">
-            <li class="drop-menu-content"><a href="index.html">History</a></li>
-            <li class="drop-menu-content"><a href="index.html">Our Team</a></li>
-            <li class="drop-menu-content"><a href="index.html">Blog</a></li>
-          </ul>
-        </li>
-        <li class="dropbtn"><a href="index.html">Careers</a></li>
-        <li class="dropbtn"><a href="index.html">About</a></li>
-        <li>
-          <ul class="account">
-            <li class="account-btn"><a href="index.html">Login</a></li>
-            <li class="account-btn"><a href="index.html">Register</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
+      <li id="companybtn-mobile" onclick="openOrCloseCompany()" class="dropbtn menu"><span
+          id="btn-active-company">Company</span><img class="arrow-down" id="arrow-down-company"
+          src="./images/icon-arrow-down.svg" aria-hidden="true"
+          alt="Imagem ilustrativa seta para baixo para expandir o menu">
+        <ul id="drop-company" class="drop-menu">
+          <li class="drop-menu-content"><a href="index.html">History</a></li>
+          <li class="drop-menu-content"><a href="index.html">Our Team</a></li>
+          <li class="drop-menu-content"><a href="index.html">Blog</a></li>
+        </ul>
+      </li>
+      <li class="dropbtn"><a href="index.html">Careers</a></li>
+      <li class="dropbtn"><a href="index.html">About</a></li>
+      <li>
+        <ul class="account">
+          <li class="account-btn"><a href="index.html">Login</a></li>
+          <li class="account-btn"><a href="index.html">Register</a></li>
+        </ul>
+      </li>
+    </ul>
   </header>
 
   <main>
